@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="css/Mine Sweeper.css">
+
+</head>
+<header>
+    <h1>Lets play...</h1>
+    <h2>Mine Sweeper!</h2>
+</header>
+
+<body onload="startGame()">
+
+    <br>
+    <div id="difficulties">
+        <form>
+            <label for="radio1" onclick="changeDifficulty(4)">
+                <input type="radio" name="difficulty" id="radio1" checked> Beginner
+            </label>
+
+            <label for="radio2" onclick="changeDifficulty(6)">
+                <input type="radio" name="difficulty" id="radio2"> Medium
+            </label>
+
+            <label for="radio3" onclick="changeDifficulty(8)">
+                <input type="radio" name="difficulty" id="radio3">Expert
+            </label>
+        </form>
+    </div>
+    </br>
+<div class="play-area">
+    <div class= "list"> Game timer:
+                    
+            <div id="gameTime"> Game time: </div>
+            <span class="timer"></span>
+            
+            <div id="countMines"> Mines: </div>
+            <span id="mines"> </span>
+            
+            <div> Best Score is:</div>
+            <span id="result"> </span>
+
+            <div id="faces">
+                </div>
+
+    </div>
+    <div class="MineSwepper">
+        <table board="1" cellpadding="10">
+            <tbody class="game-board"> </tbody>
+        </table>
+    </div> 
+</div>
+
+    
+    <div class="button-container">
+        <button class="newGame" name="newGame" onclick="startGame()"> New Game </button>
+    </div>
+
+  
+    </div>
+    </div>
+
+
+
+
+    <botton id="modalBtn" class="botton"></botton>
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Game Over!</h3>
+            <button onclick="playAgain()">Play again!</button>
+
+
+            <script src="js/Mine Sweeper.js"></script>
+
+</body>
+
+</html>

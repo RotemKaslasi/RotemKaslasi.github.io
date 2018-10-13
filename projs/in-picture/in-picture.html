@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./in-picture.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <title>in-picture</title>
+</head>
+
+
+<body onload="initGame()" >
+
+    <div class=header><h1> What's In Picture? </h1></div>
+
+
+    <div id="in-picture container" class="container">
+       
+        <img src="img/1.jpg" id="picture">
+
+        <button id="answer0" class="buttons" onclick="checkAnswer(this.id)"></button>
+        <button id="answer1" class="buttons" onclick="checkAnswer(this.id)"></button>
+
+    </div>
+
+    <script src="./in-picture.js"></script>
+</body>
+
+</html>

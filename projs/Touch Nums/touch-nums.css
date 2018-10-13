@@ -1,0 +1,79 @@
+h1{font-family: 'Luckiest Guy';
+text-align: center;
+font-size: 60px;
+text-shadow:  4px 4px rgba(234, 248, 194, 0.4);
+margin-bottom: 0 auto;}
+
+
+body {
+    background-image: url("https://images.pexels.com/photos/630754/autumn-orange-nature-red-630754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: 38cm; 
+
+}
+
+#difficulties form {
+    background:goldenrod;
+    text-align: center;
+    font-family: 'Yellowtail';
+    font-size:25px;
+         
+}
+
+label{
+    display: inline-block;
+ 
+}
+
+form  {
+    text-align: center;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.board td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: .5s;  
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;  
+   }
+
+td, th { 
+    border: 2px solid black ;
+    
+} 
+
+.newGame {
+    background-color: salmon ; 
+    border-radius: 46%;
+    color:black;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Yellowtail';
+    cursor: pointer;
+    line-height: 100px;
+    position: relative;
+    top: 343px;
+    left: 100px;
+    
+    
+}
+
+.newGame:hover{
+    background-color:rgb(55, 126, 55) ;
+    transition: all 0.5;
+}

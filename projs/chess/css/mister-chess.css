@@ -1,0 +1,60 @@
+body {
+    background-image: url("https://thumbs.dreamstime.com/b/d-light-chess-background-chess-pawns-strategy-concept-36192902.jpg");
+    background-size:cover;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding:15px;
+}
+
+.black {
+    background-color: gray
+}
+.white {
+    background-color:rgb(236, 245, 245);
+}
+
+.selected {
+    outline: 5px solid yellowgreen;
+    cursor: pointer;
+}
+
+
+.mark {
+    background-color:#94b8b8;
+    cursor: pointer;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.game-board td {
+    width: 40px;
+    height:40px;
+    text-align: center;
+    font-size:1.4em;
+ }
+
+ table {border:4px solid black;
+    box-shadow: 5px 10px rgba(0, 0, 255, .2);}
+
+h1 {font-family:'Indie Flower';
+    color: #999966;
+    font-size: 60px;
+}
+
+button {padding:10px;
+    margin: 20px;
+    border-radius: 5px;
+background-color:#999966;
+transition: all .5s;
+}
+
+button:hover{ 
+    background-color:hsl(200, 100%, 75%) ;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}

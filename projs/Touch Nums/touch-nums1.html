@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./touch-nums.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+    <title>Touch Nums</title>
+</head>
+
+<body onload="startGame()">
+
+    <h1>Touch Numbers</h1>
+
+    <div>
+        <button class="newGame" name="newGame" onclick="startGame()"> New Game </button>
+
+    </div>
+
+    <br>
+    <div id="difficulties">
+        <form>
+            <label for="radio1" onclick="changeDifficulty(4)">
+                <input type="radio" name="difficulty" id="radio1" checked> Rare
+            </label>
+
+            <label for="radio2" onclick="changeDifficulty(5)">
+                <input type="radio" name="difficulty" id="radio2"> Medium
+            </label>
+
+            <label for="radio3" onclick="changeDifficulty(6)">
+                <input type="radio" name="difficulty" id="radio3"> Well Done
+            </label>
+        </form>
+    </div>
+    </br>
+
+    <div>
+        <form>
+            Game Time:
+            <span id="gameTime"> </span>
+            Next Number:
+            <span id="nextNumber"> </span>
+        </form>
+
+    </div>
+
+    
+
+    <div>
+        <table border="1" cellpadding="10">
+            <tbody class="board"></tbody>
+        </table>
+    </div>
+    <script src="./touch-nums.js"></script>
+
+</body>
+
+</html>

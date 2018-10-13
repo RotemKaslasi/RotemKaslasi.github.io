@@ -1,0 +1,163 @@
+body {
+    background-image: url("http://bgfons.com/uploads/sky/sky_texture1987.jpg");
+    background-repeat: no-repeat;
+    background-size: 38cm; 
+   
+}
+
+header {
+    background-color:LightGoldenRodYellow ;
+    text-align: center;
+    size: 40px;
+}
+
+
+h1 {
+    font-family: cursive;
+    font-size: 30px;
+}
+
+h2{
+    font-family: cursive;
+    font-size: 40px;
+}
+
+#difficulties form {
+    background:cornflowerblue;
+    text-align: center;
+    font-family:cursive;
+         
+}
+
+label{
+    display: inline-block;
+}
+
+table {
+
+    margin:auto;
+    width: 50%;
+    height: 50%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px; 
+    
+   }
+#nav{
+    display: inline-block;
+    width: 25%;
+    
+      
+}
+
+/* #faces {
+    disable:
+} */
+.play-area{
+    padding-bottom: 20px;
+
+}
+.list {
+    font-family: cursive;
+    text-align: left;
+    display: inline-block;
+    width:20%;
+    vertical-align: top;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.MineSwepper {
+    display: inline-block;
+    margin: 0 auto;
+    width: 78%;
+}
+
+td, th { 
+    border: 2px solid black ;
+    border-radius: 15px;
+    height: 15px;
+	width: 15px;
+    margin: 0; 
+    padding:0;
+    text-align: center;
+    font-weight: bold
+    
+} 
+
+td {
+    width: 15px;
+    height:15px;
+    text-align: center;
+    font-size:1.4em;
+}
+
+.CellButton{
+    display:inline-block;
+    width: 80px;
+    height: 40px;
+}
+
+.CellButton:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+.newGame {
+    margin: auto;
+    width: 4cm;
+    border-radius: 10px;
+    border: 1px solid black ;
+    color: rgb(9, 18, 26);
+    background-color: #a3c9cc;
+    text-align: center;
+    cursor: pointer;
+}
+
+img { 
+        width:30px;
+        height:30px;
+}
+
+/* Modal design */
+
+#gameOverModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(255,255,255); /* Fallback color */
+    background-color: rgba(255,255,255,0.4); /* Black w/ opacity */
+  }
+  .modal-content{
+    background-color: rgb(48, 175, 169);
+    width:30%;
+    vertical-align: middle;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 3px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+ 

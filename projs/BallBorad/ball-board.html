@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Balls</title>
+  <link rel="stylesheet" href="css/ball-board.css">
+</head>
+
+<body onload="init()" onkeydown="handleKey(event)">
+  <h1>Collect those Balls</h1>
+
+  <table>
+    <tbody class="board"></tbody>
+  </table>
+
+  <form>
+    Balls Collect:
+    <span id="ballsCollect">0 </span>
+  </form>
+
+
+<div><button class="restart" onClick="init()">Restart Game!</button></div> 
+  
+
+
+
+
+  <script src="js/ball-board.js"></script>
+</body>
+
+</html>
