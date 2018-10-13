@@ -44,7 +44,7 @@ function renderBooks() {
     var tableHtml = (headerHtml + strHtmls.join('') + `  </tbody>
 </table>`);
     console.log(tableHtml)
-   
+    $('.book-Table').html(tableHtml);
 
 }
 
