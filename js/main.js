@@ -67,10 +67,12 @@ var gProjs = [
 
 
 function initPage() {
-    console.log('here');
+    initPortfolio();
+}
 
+
+function initPortfolio(){
     var projs = gProjs;
-
     var portHeader = `    
     <div class="container">
         <div class="row">
@@ -79,13 +81,12 @@ function initPage() {
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
         </div>
-    <div class="row">
-      `;
+    <div class="row">`;
 
-    var portSectionHtml = projs.map(function (proj) {
+    var portSectionHtml = projs.map(function (proj,index) {
         return `
         <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal" onClick="makeModal((${index}))">
              <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                     <i class="fa fa-plus fa-3x"></i>
@@ -100,8 +101,6 @@ function initPage() {
         </div>
         `
     });
-
-    console.log(portSectionHtml);
     $('#portfolio').html(portHeader + portSectionHtml.join('')+'</div>');
 }
 
@@ -109,43 +108,30 @@ function initPage() {
 
 
 
-
-
-
-
-
-/* <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl"></div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <div class="modal-body">
-            <!-- Project Details Go Here -->
-            <h2>Project Name</h2>
-            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-            <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
-              dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-              maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-            <ul class="list-inline">
-              <li>Date: January 2017</li>
-              <li>Client: Southwest</li>
-              <li>Category: Website Design</li>
-            </ul>
-            <button class="btn btn-primary" data-dismiss="modal" type="button">
-                <i class="fa fa-times"></i>
-                Close Project</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div> */
-
+function makeModal(index){
+    info = gProjs[index]
+    var date = new Date(info.publishedAt);
+    var labelString = ""
+    for (i=0;i<info.labels.length;i++){
+        labelString +='<span class="label label-default">'+info.labels[i]+'</span>'
+    }
+    var string = `  <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>${info.name}</h2>
+                                <p class="item-intro text-muted">${info.title}</p>
+                                <img class="img-fluid d-block mx-auto" src="${info.url}" alt="">
+                                <p>${info.desc}</p>
+                                <ul class="list-inline">
+                                <li>Date: ${date.toDateString()}</li>
+                                ${labelString}
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close Project</button>
+                            </div>
+                        </div>
+                    </div>`
+    $('.modal').find('.container').html(string)
+}
