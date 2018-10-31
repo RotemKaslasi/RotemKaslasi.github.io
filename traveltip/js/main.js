@@ -15,7 +15,16 @@ window.onload = () => {
         ).catch(console.warn);
 
 
-
+function onMyLocation(){
+    console.log("moving to my location");
+    window.onload = () => {
+        mapService.initMap()
+            .then(
+                () => {
+                    mapService.addMarker({ lat: 32.0749831, lng: 34.9120554 });
+                }
+            ).catch(console.warn);
+}
     // locService.getPosition()
     //     .then(pos => {
     //         console.log('User position is:', pos.coords);
