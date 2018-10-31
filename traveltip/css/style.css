@@ -4,4 +4,9 @@ body {
 
 #weather-container{
     background-color: steelblue;
+    float: left;
+}
+
+#map {
+    float: right;
 }
