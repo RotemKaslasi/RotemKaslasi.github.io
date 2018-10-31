@@ -14,7 +14,6 @@ window.onload = () => {
             }
         ).catch(console.warn);
 
-
 function onMyLocation(){
     console.log("moving to my location");
     window.onload = () => {
@@ -24,7 +23,7 @@ function onMyLocation(){
                     mapService.addMarker({ lat: 32.0749831, lng: 34.9120554 });
                 }
             ).catch(console.warn);
-}
+}}
     // locService.getPosition()
     //     .then(pos => {
     //         console.log('User position is:', pos.coords);
@@ -37,7 +36,6 @@ function onMyLocation(){
 // document.querySelector('.btn1').onclick =  () => {
 //     console.log('Thanks!');
 // }
-
 
 document.querySelector('.btn1').addEventListener('click', (ev)=>{
     console.log('Aha!', ev.target);
