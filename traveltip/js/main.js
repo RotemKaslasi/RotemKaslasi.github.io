@@ -41,3 +41,6 @@ document.querySelector('.btn1').addEventListener('click', (ev)=>{
     console.log('Aha!', ev.target);
     mapService.panTo( 35.6895,  139.6917);
 })
+
+
+// var const = 'www.baba.co.il\baba\index.html? lat= ${lat} & lan= ${lan} ';

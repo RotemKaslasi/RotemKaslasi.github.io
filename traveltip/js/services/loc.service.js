@@ -28,3 +28,4 @@ export default {
     getLocs :getLocs,
     getPosition: getPosition
 }
+
