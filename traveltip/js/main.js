@@ -24,18 +24,18 @@ function onMyLocation(){
                 }
             ).catch(console.warn);
 }}
-    // locService.getPosition()
-    //     .then(pos => {
-    //         console.log('User position is:', pos.coords);
-    //     })
-    //     .catch(err => {
-    //         console.log('err!!!', err);
-    //     })
+    locService.getPosition()
+        .then(pos => {
+            console.log('User position is:', pos.coords);
+        })
+        .catch(err => {
+            console.log('err!!!', err);
+        })
 }
 
-// document.querySelector('.btn1').onclick =  () => {
-//     console.log('Thanks!');
-// }
+document.querySelector('.btn1').onclick =  () => {
+    console.log('Thanks!');
+}
 
 document.querySelector('.btn1').addEventListener('click', (ev)=>{
     console.log('Aha!', ev.target);
